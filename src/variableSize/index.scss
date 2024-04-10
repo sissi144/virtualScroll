@@ -1,0 +1,27 @@
+.height-dynamic {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  contain: layout;
+  will-change: transform;
+  background-color: #eee;
+
+  &__item,
+  &__placeholder {
+    position: absolute;
+    contain: layout;
+    will-change: transform;
+  }
+
+  &__scroll-runway {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    transition: transform 0.2s;
+  }
+}
